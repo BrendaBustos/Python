@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <title>CONTACTO🌙</title>
+     <meta charset="utf-8">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <link href="estilos.css" rel="stylesheet">
+     <script  src="datos.js"></script> 
+</head>
+<body>  
+     <header>
+          <div id="marca">
+               <h1>MAJIKA🌙</h1>
+          </div>
+          <nav id="botonera">
+          <ul>
+           <li><a href="Index.html">✨INICIO</a></li>
+           <li><a href="Trabajos.html">✨TRABAJOS</a></li>
+           <li><a href="Nosotros.html">✨NOSOTROS</a></li>
+           <li><a href="Contacto.html">✨CONTACTO</a></li>
+           </ul>
+           </nav>           
+     </header>
+
+
+     <section id="contacto">
+               <div id="formulario">
+                   <div class="container">
+                       <div class="item">
+                    <h2> Contactanos ! ! ! 💌 </h2> 
+               </div>
+          </div>
+          <br/>
+
+          <h3>Ingrese su mail para recibir mas informacion y suscribirse a nuestras novedades y ofertas</h3>
+
+
+          <form name="f1" action="Suscrip.html" onsubmit="return validacion();"> <br/><br/>        
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Ingrese su email"> <label id="mensaje"></label><br><br>      
+          <label id="mensaje"></label><br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Cancelar">
+    </form>
+
+    <script>
+        function validacion() 
+        {
+            valor = document.getElementById("email").value;
+            
+              
+            if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|ar)+$/.test(valor)))
+            {
+                document.getElementById('mensaje').innerHTML = "No es una direccion de email correcta" ;
+                
+                elemento = document.getElementById('email');
+                elemento.value = '';
+                elemento.focus();
+
+                return false;
+            }
+            
+            return true;          
+        }
+    </script>
+
+
+     <script src="js/formulario.js"></script>
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+
+
+               
+        <!--  <form method="POST" action="#">
+               <ul>
+                    <li>NOMBRE: <input type="text" name="nombre" id="nombre" required></li><br/>
+                    <li>APELLIDO: <input type="text" name="apellido" id="apellido" required></li><br/>
+                    <li>EMAIL: <input type="email" name="correo" id="correo" required></li><br/>
+                    <li>EDAD: <input type="number" name="edad" min="16" max="100" id="edad"></li><br/>
+                    <li>FECHA DE NACIMIENTO: <input type="date" name="fecha_nacimiento" id="cumple"></li><br/>
+                    <li>MENSAJE: <textarea name="mensaje" rows="13" id="msj"></textarea></li><br/> -->
+                    <!--<li>Clave:<br><input  type="text"  name="clave"  id="clave"></li> 
+                    <li>Valor:<br><textarea  name="text"  id="texto"></textarea></li>-->
+                   <!-- <li><input  type="button" onclick="alerta()" name="grabar"  id="grabar" value="GRABAR"></li>
+
+               </ul>               
+               
+          </form>             
+          </div> -->
+          <section id="admindatos">
+          </section>
+          <script>
+               function alerta(){
+                    alert("Mensaje enviado correctamente");
+               }
+          </script>
+
+          
+
+
+
+     </section>
+          
+     
+     <footer>
+          <div id="Map">  
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.328851033131!2d-64.15634208515932!3d-31.37749480151095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329824242df9c1%3A0x330c21c2068ed641!2sJuan%20A.%20Gelly%20y%20Obes%202657%2C%20X5012%20HUG%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1626307045827!5m2!1ses-419!2sar" width="550" height="230" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div id="Direccion">
+               <p>Juan A. Gelly y Obes 2657 - Cordoba Capital, Argentina - CP 5012.-</p>
+          </div> 
+          <div id="Datos">
+               <p>Podes contactarte con Nuestro Majiko Lugar ✨ atraves de nuestras redes sociales, o de forma personalizada completando el formulario de contacto en la seccion <a href="Contacto.html">✨CONTACTO</a> y nos comunicaremos a la brevedad!!!!</p>
+          </div>
+          <nav id="redes">
+               <ul>
+               <li><a target="blank" href="https://www.facebook.com/"><img title="Facebook" src="IMAGENES/facebook.png"width="40" height="40"></li>
+               <li><a target="blank" href="https://www.instagram.com/"><img title="Instagram" src="IMAGENES/instagram.png"width="40" height="40"></li>
+               <li><a target="blank" href="https://www.twitter.com/"><img title="Twitter" src="IMAGENES/twitter.png"width="40" height="40"></li>
+               <li><a target="blank" href="https://www.youtube.com/"><img title="Youtube" src="IMAGENES/youtube.png"width="40" height="40"></li>
+               <li><a target="blank" href="https://www.whatsapp.com/"><img title="Whatsapp" src="IMAGENES/whatsapp.png"width="40" height="40"></li>
+          </nav>
+          </div>
+     </div>
+     </footer>
+</body>
+</html>

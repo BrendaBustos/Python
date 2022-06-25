@@ -1,0 +1,945 @@
+/*@import url ('https://fonts.googleapis.com/css2? family = Varela + Round & display = swap');*/
+
+header, section, footer {
+	width: 1335px;
+	height: 1500px;
+	margin-right:auto;
+	margin-left: auto;
+}
+body {
+	font-family: monospace, sans-serif;
+	/*width: 1330px;*/
+}
+
+header {
+	height: 360px;
+	border-style: border-box;
+	background-size: auto;
+	background-image: url(IMAGENES/trebol1.jpg);
+	
+}
+
+#marca {
+	text-align: center;
+}
+
+#marca h1 {
+	height: 0px;		
+	padding: 110px;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 0px;
+	font-style: bold;
+}
+
+#botonera {
+	width: 1320px;
+	text-align: center;	
+}
+
+#botonera ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#botonera ul li {
+	display: inline;
+}
+
+#botonera ul li a {
+	display: inline-block;
+	padding: 30px 90px;
+	text-decoration: none;
+	color: #000000;
+	font-style: bold;
+}
+
+#botonera ul li a:hover {
+	background-color: rgba(193, 250, 178, 0.5);
+	font-style: bold;
+	color: #006600;
+	font-size: 23px;
+	font-style: italic;
+}
+
+section#inicio {
+	height:1010px;
+	background-image: url(IMAGENES/hadita2.jpg);
+	background-size: cover;
+}
+
+.item {
+	background-color: rgba(251, 247, 8, 0.5);
+	height: 138px;
+	width: 1300px;
+	clip-path: circle(15% at top left);
+	transition-property: clip-path;
+	transition-duration: 30s;
+}
+
+.item h2{
+    text-align: center;
+
+}
+
+.container:hover .item {
+	transition-duration: 1s;
+	background-color: rgba(238, 83, 170, 0.8);
+	clip-path: circle(150% at top left);
+	font-style: italic;
+}
+
+
+#txt_contenido  {
+	height: 360px;
+	width: 1200px;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-sizing: content-box;
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 20px;
+	border-style: ridge;
+	float: left;
+	padding: 10px;
+}
+
+#txt_contenido h2 {
+	font-size: 22px;
+	text-align: center;
+
+}
+
+#txt_contenido p {
+	font-size: 18px;
+	font-style: bold;
+}
+
+section #multimedio {
+	height: 400px;
+	width: 400px;
+	box-sizing: content-box;
+	margin-left: 400px;
+	margin-top: 0px;
+}
+nav {
+	margin: 0px 35px;
+}
+
+
+section #multimedio ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+section #multimedio ul li {
+	display: inline;
+}
+
+section #multimedio ul li a {
+	display: inline-block;
+	padding: 5px 5px;
+	text-decoration: none;
+	color: #000000;
+	font-style: bold;
+}
+
+section #multimedio ul li a:hover {
+	background-color: rgba(193, 250, 178, 0.5);
+	font-style: bold;
+	color: #006600;
+	font-size: 13px;
+	font-style: italic;
+}
+
+
+
+footer {
+	background-color: #8CE844;
+	height: 300px;
+	background-image: url(IMAGENES/footer.jpg);
+	/*border-style: border-box;*/
+}
+
+#Map {
+	margin-left: 4px;
+	float: right;
+	padding: 10px;
+	border-style: ridge;
+}
+
+#Direccion {
+	margin-left: 400px;
+	float: right;
+	margin-right: 10px;
+}
+
+#Datos{
+	width: 500px;
+	float: top;
+	padding: 10px;
+	margin-left: 30px;
+}
+
+#redes ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#redes ul li {
+	display: inline;
+}
+
+#redes ul li img {
+	display: inline-block;
+	padding: 30px 10px;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+#redes ul li img:hover {
+    background-color: rgba(193, 250, 178, 0.8);
+	color: #006600;
+	height: 60px;
+	width: 60px;
+}
+
+/*seccion trabajos*/
+
+section#trabajos {
+	height:2445px;
+	width: 1335px;
+	/*background-image: url(IMAGENES/hadita2.jpg);*/
+	background-color: #D8F6CE;
+	background-size: cover;
+	box-sizing: content-box;
+	
+
+}
+
+.item {
+	background-color: rgba(251, 247, 8, 0.5);
+	height: 138px;
+	width: 1300px;
+	margin: 20px;
+	clip-path: circle(15% at top left);
+	transition-property: clip-path;
+	transition-duration: 30s;
+	/*transition-timing-function:ease;
+	transition-delay:;*/
+}
+
+.item h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 55px;
+
+}
+
+.container:hover .item {
+	transition-duration: 1s;
+	background-color: rgba(238, 83, 170, 0.8);
+	clip-path: circle(150% at top left);
+	font-style: italic;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows: minmax(250px, auto);
+	gap:20px;
+	padding: 20px;
+	grid-auto-flow:dense;
+}
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #D8F6CE;
+	border-radius: 4px;
+	transition: transform 0.3s ease-in-out;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.wide {
+	grid-column: span 2;
+}
+
+.tall {
+	grid-row: span 2;
+}
+
+#textosint h3 {
+margin-top: 50px;
+padding: 20px;
+margin-left: 300px;
+font-size: 23px;
+box-sizing: content-box;
+}
+
+/*seccion nosotros*/
+
+section#nosotros {
+	height:1300px;
+	/*background-image: url(IMAGENES/hadita2.jpg);
+	background-size: cover;*/
+	background-color: #D8F6CE;
+}
+
+.item {
+	background-color: rgba(251, 247, 8, 0.5);
+	height: 138px;
+	width: 1300px;
+	margin: 20px;
+	clip-path: circle(15% at top left);
+	transition-property: clip-path;
+	transition-duration: 30s;
+	/*transition-timing-function:ease;
+	transition-delay:;*/
+}
+
+.item h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 55px;
+
+}
+
+.container:hover .item {
+	transition-duration: 1s;
+	background-color: rgba(238, 83, 170, 0.8);
+	clip-path: circle(150% at top left);
+	font-style: italic;
+}
+
+circle#cp {
+	animation: centro1 ease-in-out 3s infinite;
+}
+
+circle#cg {
+	animation: centro2 ease-in-out 6s infinite;
+}
+
+ellipse#pina {
+	animation: petaloiarriba ease-in-out 9s infinite;
+}
+ellipse#pinab {
+	animation: petaloiabajo ease-in-out 9s infinite;
+}
+ellipse#pini {
+	animation: petaloiizq ease-in-out 9s infinite;
+}
+ellipse#pind {
+	animation: petaloider ease-in-out 9s infinite;
+}
+ellipse#pa {
+	animation: petaloarriba ease-in-out 12s infinite;
+}
+ellipse#pab {
+	animation: petaloabajo ease-in-out 12s infinite;
+}
+ellipse#izquierdo {
+	animation: petaloizquierdo ease-in-out 12s infinite;
+}
+ellipse#pd {
+	animation: petaloder ease-in-out 12s infinite;
+}
+circle#psi {
+	animation: pimpsizqu ease-in-out 15s infinite;
+}
+circle#psd {
+	animation: pimpsder ease-in-out 15s infinite;
+}
+circle#piz {
+	animation: pimpiiz ease-in-out 15s infinite;
+}
+circle#pid {
+	animation: pimpider ease-in-out 15s infinite;
+}
+
+/*centros*/
+@keyframes centro1 {
+	0% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	10% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+@keyframes centro2 {
+	0% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	10% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	70%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+/*petalos internos*/
+
+@keyframes petaloiarriba {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	10% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+@keyframes petaloiabajo {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	10% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes petaloiizq {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	10% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes petaloider {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	10% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	90% {
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+/*petalo externo*/
+@keyframes petaloarriba {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+
+	50%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes petaloabajo {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+
+	50%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes petaloder {
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes petaloizquierdo{
+	0% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	80%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+/*pimps*/
+
+@keyframes pimpsizqu{
+	0% {
+		transform: translate(8px);
+		opacity: 0;
+	}
+	20%{
+		transform: translate(1px);
+		opacity: 1;
+	}
+	40%{
+		transform: translate(8px);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	80%{
+		transform: translate(8px);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes pimpsder{
+	0% {
+		transform: translate(-8px);
+		opacity: 0;
+	}
+	20%{
+		transform: translate(-1px);
+		opacity: 1;
+	}
+	40%{
+		transform: translate(-8px);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	80%{
+		transform: translate(-8px);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes pimpiiz{
+	0% {
+		transform: translate(8px);
+		opacity: 0;
+	}
+	20%{
+		transform: translate(1px);
+		opacity: 1;
+	}
+	40%{
+		transform: translate(8px);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	80%{
+		transform: translate(8px);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+@keyframes pimpider{
+	0% {
+		transform: translate(-8px);
+		opacity: 0;
+	}
+	20%{
+		transform: translate(-1px);
+		opacity: 1;
+	}
+	40%{
+		transform: translate(-8px);
+		opacity: 0;
+	}
+	50%{
+		transform: scale(1.0);
+		opacity: 0;
+	}
+	60%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+	80%{
+		transform: translate(-8px);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+
+section#img_canvas {
+	margin-left: 220px;
+	padding-top: 0px;
+}
+
+/*seccion contacto*/
+section#contacto {
+	height:500px;
+	/*background-image: url(IMAGENES/hadita2.jpg);*/
+	background-color: #D8F6CE;
+	background-size: cover;
+}
+
+#formulario h3 {	
+	margin-left: 50px;
+	font-size: 25px;
+	box-sizing: content-box;
+}
+
+h4{
+	margin-left: 300px;
+	font-size: 30px;
+}
+
+form {
+	margin-left: 520px;
+}
+
+.item {
+	background-color: rgba(251, 247, 8, 0.5);
+	height: 138px;
+	width: 1300px;
+	margin: 20px;
+	clip-path: circle(15% at top left);
+	transition-property: clip-path;
+	transition-duration: 30s;
+	/*transition-timing-function:ease;
+	transition-delay:;*/
+}
+
+.item h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.container:hover .item {
+	transition-duration: 1s;
+	background-color: rgba(238, 83, 170, 0.8);
+	clip-path: circle(150% at top left);
+	font-style: italic;
+
+
+}
+#formulario ul li {
+	margin-top: 10px;
+	padding: 5px 5px;
+	margin-left: 430px;
+	box-sizing: content-box;
+	font-style: bold;
+}
+
+
+
+
+
+/* inicio del responsive*/
+
+
+
+
+@media all and (max-width: 768px) {
+
+
+header, section, footer {
+	width: 760px;
+	height: 1500px;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+
+header {
+	height: 360px;
+	border-style: border-box;
+	background-size: auto;
+	background-image: url(IMAGENES/trebol1.jpg);
+	
+}
+
+#marca {
+	text-align: center;
+}
+
+#marca h1 {
+	height: 0px;		
+	padding: 110px;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 0px;
+	font-style: bold;
+}
+
+#botonera {
+	width: 760px;
+	text-align: center;	
+}
+
+#botonera ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#botonera ul li {
+	display: inline;
+}
+
+#botonera ul li a {
+	display: inline-block;
+	padding: 30px 90px;
+	text-decoration: none;
+	color: #000000;
+	font-style: bold;
+}
+
+#botonera ul li a:hover {
+	background-color: rgba(193, 250, 178, 0.5);
+	font-style: bold;
+	color: #006600;
+	font-size: 23px;
+	font-style: italic;
+}
+
+/*seccion contacto*/
+
+section#contacto {
+	height:400px;
+	background-color: #D8F6CE;
+	background-size: cover;
+}
+
+
+
+.item {
+	background-color: rgba(251, 247, 8, 0.5);
+	height: 138px;
+	width: 760px;
+	margin: 20px;
+	clip-path: circle(15% at top left);
+	transition-property: clip-path;
+	transition-duration: 30s;
+	/*transition-timing-function:ease;
+	transition-delay:;*/
+}
+
+.item h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.container:hover .item {
+	transition-duration: 1s;
+	background-color: rgba(238, 83, 170, 0.8);
+	clip-path: circle(150% at top left);
+	font-style: italic;
+
+
+}
+
+#formulario{
+	height: 600px;
+}
+
+#formulario ul li {
+	margin-top: 10px;
+	padding: 5px 5px;
+	margin-left: 430px;
+	box-sizing: content-box;
+	font-style: bold;
+}
+
+ }
